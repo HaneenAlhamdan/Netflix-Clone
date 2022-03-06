@@ -3,7 +3,7 @@ import Movie from "../Movie/Movie";
 import "./MovieList.css";
 export default function MovieList({data}){
     return(
-        <div id="content">
+        <div id="con">
         {
             data.map((data)=>{
                 return(
