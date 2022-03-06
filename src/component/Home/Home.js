@@ -1,13 +1,13 @@
 import MovieList from "../MovieList/MovieList";
 import Navbar from "../Navbar/Navbar";
-// import Footer from "../Footer/Footer";
+
 import "../Home/Home.css";
 import { useState, useEffect } from "react";
 
 export default function Home() {
     const [movie, setMovie] = useState([]);
     async function getData() {
-        //https://movies-library-app-task15.herokuapp.com
+        
         let response = await fetch(`${process.env.REACT_APP_SERVER}/trending`);
         let data = await response.json();
         setMovie(data);
@@ -19,7 +19,7 @@ export default function Home() {
         <>
             <Navbar />
             {movie && <MovieList data={movie} />}
-            {/* <Footer /> */}
+          
         </>
 
     )
