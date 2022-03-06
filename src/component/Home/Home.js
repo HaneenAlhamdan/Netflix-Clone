@@ -1,6 +1,5 @@
 import MovieList from "../MovieList/MovieList";
 import Navbar from "../Navbar/Navbar";
-
 import "../Home/Home.css";
 import { useState, useEffect } from "react";
 
