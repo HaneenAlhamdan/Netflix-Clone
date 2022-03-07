@@ -15,18 +15,13 @@ export default function ModalMonie({ data, show, handleClose }) {
       async function addToFavList(data, comment){
         const url = `${process.env.REACT_APP_SERVER}/addMovie`;
         const movie = {
-        readyInMinutes:data.readyInMinutes,
-          vegetraian:data.vegetraian,
-          sourceUrl:data.sourceUrl,
-          Image:data.Image,
-          summary:data.summary,
-          instructions:data.instructions,
+        
           id : data.id,
           release_date : data.release_date,
           title : data.title,
           poster_path : data.poster_path, 
           overview : data.overview, 
-          comment : comment
+         comment : comment
         }
     //    const response = 
        await fetch(url, {
@@ -60,8 +55,14 @@ export default function ModalMonie({ data, show, handleClose }) {
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
-                    
+                        </Button>
+                        {/* <Button variant="premiry" onClick={handleClose}>
+                        Delete
                     </Button>
+                    <Button variant="premiry" onClick={handleClose}>
+                        Update
+                    
+                    </Button> */}
                 </Modal.Footer>
             </Modal>
         </>
