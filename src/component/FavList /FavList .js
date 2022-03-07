@@ -1,7 +1,7 @@
 import Header from "../Navbar/Navbar";
 import { useState, useEffect } from "react";
 import FavMovie from "../FavList /FavMovie/FavMovie";
-// import "../FavList /FavList";
+// import "../FavList.css";
 
 
 export default function FavList() {

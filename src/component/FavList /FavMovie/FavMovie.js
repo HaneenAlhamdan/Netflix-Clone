@@ -32,6 +32,7 @@ export default function FavMovie({ movie, getFavMovie }) {
           <Card.Text> Your Comment: {movie.my_comment}</Card.Text>
           <Button variant="danger" onClick={() => handelDelete(movie.id)}>Delete</Button>
           <Button variant="primary" >Update</Button>
+    
         </Card.Body>
       </Card>
     </div>
